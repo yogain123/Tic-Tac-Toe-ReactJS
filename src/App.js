@@ -33,6 +33,9 @@ class App extends Component {
 
   handleClick(index){
 
+    if(this.state.board[index])
+      return;
+
     if(this.state.winner){
       alert(`Game Is Over, Player ${this.state.winner} was Winner`);
       return;
